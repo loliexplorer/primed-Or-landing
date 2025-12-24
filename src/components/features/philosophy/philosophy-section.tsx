@@ -63,7 +63,10 @@ export function PhilosophySection() {
                 */}
                         <div className="h-full w-full bg-[#E5E0D8] relative overflow-hidden rounded-sm">
                             {/* Abstract Shape or Image Placeholder */}
-                            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-90 transition-transform duration-700 hover:scale-105" />
+                            <div
+                                className="absolute inset-0 bg-cover bg-center opacity-90 transition-transform duration-700 hover:scale-105"
+                                style={{ backgroundImage: "url('/philosophy.jpg')" }}
+                            />
 
                             {/* Decorative border */}
                             <div className="absolute inset-4 border border-[var(--primary-gold)]/30 z-10" />

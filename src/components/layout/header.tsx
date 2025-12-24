@@ -19,7 +19,7 @@ export function Header() {
     }, []);
 
     const navLinks = [
-        { name: 'Shop', href: '#collections' },
+        { name: 'Shop', href: 'https://primedor.com/' },
         { name: 'Our Story', href: '#philosophy' },
         { name: 'Ingredients', href: '#ingredients' },
     ];
@@ -42,27 +42,47 @@ export function Header() {
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:flex items-center gap-8">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="text-sm uppercase tracking-widest text-white/80 hover:text-[var(--primary-gold)] transition-colors"
-                            >
-                                {link.name}
-                            </a>
-                        ))}
-                        <button className="text-white hover:text-[var(--primary-gold)] transition-colors">
+                        {navLinks.map((link) => {
+                            const isExternal = link.href.startsWith('http');
+                            return (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    target={isExternal ? "_blank" : undefined}
+                                    rel={isExternal ? "noopener noreferrer" : undefined}
+                                    className="text-sm uppercase tracking-widest text-white/80 hover:text-[var(--primary-gold)] transition-colors"
+                                >
+                                    {link.name}
+                                </a>
+                            );
+                        })}
+                        <a
+                            href="https://primedor.com/collections/all"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-[var(--primary-gold)] transition-colors"
+                        >
                             <ShoppingBag className="w-5 h-5" />
-                        </button>
+                        </a>
                     </nav>
 
-                    {/* Mobile Menu Button */}
-                    <button
-                        className="md:hidden text-white z-50 relative"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    >
-                        {isMobileMenuOpen ? <X /> : <Menu />}
-                    </button>
+                    {/* Mobile Controls */}
+                    <div className="flex items-center gap-4 md:hidden z-50 relative">
+                        <a
+                            href="https://primedor.com/collections/all"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-white hover:text-[var(--primary-gold)] transition-colors"
+                        >
+                            <ShoppingBag className="w-5 h-5" />
+                        </a>
+                        <button
+                            className="text-white"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        >
+                            {isMobileMenuOpen ? <X /> : <Menu />}
+                        </button>
+                    </div>
                 </div>
             </header>
 
@@ -76,16 +96,21 @@ export function Header() {
                         transition={{ type: "tween", duration: 0.3 }}
                         className="fixed inset-0 z-40 bg-[#0E0B0A] flex flex-col items-center justify-center space-y-8 md:hidden"
                     >
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="font-serif text-3xl text-white hover:text-[var(--primary-gold)]"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+                        {navLinks.map((link) => {
+                            const isExternal = link.href.startsWith('http');
+                            return (
+                                <a
+                                    key={link.name}
+                                    href={link.href}
+                                    target={isExternal ? "_blank" : undefined}
+                                    rel={isExternal ? "noopener noreferrer" : undefined}
+                                    className="font-serif text-3xl text-white hover:text-[var(--primary-gold)]"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {link.name}
+                                </a>
+                            );
+                        })}
                     </motion.div>
                 )}
             </AnimatePresence>
