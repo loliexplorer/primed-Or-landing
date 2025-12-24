@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ShoppingBag } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils'; // Re-using cn utility
 
 export function Header() {
@@ -35,9 +36,20 @@ export function Header() {
                 )}
             >
                 <div className="container mx-auto px-6 flex items-center justify-between">
-                    {/* Logo */}
-                    <Link href="/" className="font-serif text-2xl font-bold text-white tracking-tight z-50 relative">
-                        Primed&apos;Or
+                    {/* Logo Group */}
+                    <Link href="/" className="flex flex-col items-center z-50 relative group">
+                        <div className="w-12 h-12 mb-1 relative overflow-hidden transition-transform duration-500 group-hover:scale-110">
+                            <Image
+                                src="/logo.png"
+                                alt="Primed'Or Logo"
+                                fill
+                                className="object-contain"
+                                priority
+                            />
+                        </div>
+                        <span className="font-serif text-2xl font-bold text-white tracking-tight">
+                            Primed&apos;Or
+                        </span>
                     </Link>
 
                     {/* Desktop Nav */}
