@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Palette - Earthy & Premium */
+  --background: #0E0B0A;      /* Deep Brown/Black */
+  --foreground: #F9F7F5;      /* Off-White */
+  
+  --primary-gold: #C8B278;    /* Muted Gold */
+  --primary-gold-hover: #AA955F;
+  
+  --accent-sage: #4C664C;     /* Deep Green */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary-gold: var(--primary-gold);
+  --color-primary-gold-hover: var(--primary-gold-hover);
+  --color-accent-sage: var(--accent-sage);
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}

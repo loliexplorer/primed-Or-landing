@@ -1,0 +1,94 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Menu, X, ShoppingBag } from 'lucide-react';
+import Link from 'next/link';
+import { cn } from '@/lib/utils'; // Re-using cn utility
+
+export function Header() {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const navLinks = [
+        { name: 'Shop', href: '#collections' },
+        { name: 'Our Story', href: '#philosophy' },
+        { name: 'Ingredients', href: '#ingredients' },
+    ];
+
+    return (
+        <>
+            <header
+                className={cn(
+                    "fixed top-0 left-0 right-0 z-40 transition-all duration-300 border-b border-transparent",
+                    isScrolled
+                        ? "bg-[#0E0B0A]/80 backdrop-blur-md py-4 border-white/5"
+                        : "bg-transparent py-6"
+                )}
+            >
+                <div className="container mx-auto px-6 flex items-center justify-between">
+                    {/* Logo */}
+                    <Link href="/" className="font-serif text-2xl font-bold text-white tracking-tight z-50 relative">
+                        Primed&apos;Or
+                    </Link>
+
+                    {/* Desktop Nav */}
+                    <nav className="hidden md:flex items-center gap-8">
+                        {navLinks.map((link) => (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="text-sm uppercase tracking-widest text-white/80 hover:text-[var(--primary-gold)] transition-colors"
+                            >
+                                {link.name}
+                            </a>
+                        ))}
+                        <button className="text-white hover:text-[var(--primary-gold)] transition-colors">
+                            <ShoppingBag className="w-5 h-5" />
+                        </button>
+                    </nav>
+
+                    {/* Mobile Menu Button */}
+                    <button
+                        className="md:hidden text-white z-50 relative"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    >
+                        {isMobileMenuOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
+            </header>
+
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, x: '100%' }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: '100%' }}
+                        transition={{ type: "tween", duration: 0.3 }}
+                        className="fixed inset-0 z-40 bg-[#0E0B0A] flex flex-col items-center justify-center space-y-8 md:hidden"
+                    >
+                        {navLinks.map((link) => (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                className="font-serif text-3xl text-white hover:text-[var(--primary-gold)]"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                {link.name}
+                            </a>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </>
+    );
+}
