@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export function HeroSection() {
     return (
@@ -14,10 +15,8 @@ export function HeroSection() {
                     playsInline
                     className="h-full w-full object-cover opacity-50"
                 >
-                    {/* Placeholder source - Using a remote Pexels video for Dev environment since local file is missing */}
                     <source src="https://videos.pexels.com/video-files/5532776/5532776-hd_1920_1080_25fps.mp4" type="video/mp4" />
                 </video>
-                {/* Gradient Overlay for legibility */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
             </div>
 
@@ -27,8 +26,19 @@ export function HeroSection() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="space-y-6"
+                    className="flex flex-col items-center space-y-6"
                 >
+                    {/* Logo above big text */}
+                    <div className="w-24 h-24 mb-2 relative overflow-hidden transition-transform duration-700 hover:scale-110">
+                        <Image
+                            src="/logo.png"
+                            alt="Primed'Or Logo"
+                            fill
+                            className="object-contain"
+                            priority
+                        />
+                    </div>
+
                     <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight">
                         Primed&apos;Or
                     </h1>

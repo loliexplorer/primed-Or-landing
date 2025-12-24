@@ -8,18 +8,8 @@ export function Footer() {
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
                 {/* Brand Column */}
                 <div className="space-y-6">
-                    <Link href="/" className="flex flex-col items-start gap-2 group">
-                        <div className="w-16 h-16 relative overflow-hidden transition-transform duration-500 group-hover:scale-110">
-                            <Image
-                                src="/logo.png"
-                                alt="Primed'Or Logo"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
-                        <span className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
-                            Primed&apos;Or
-                        </span>
+                    <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
+                        Primed&apos;Or
                     </Link>
                     <p className="text-stone-400 font-light text-sm leading-relaxed max-w-sm">
                         Tinh hoa quà tặng từ thiên nhiên. Chúng tôi tin rằng mỗi mùi hương là một câu chuyện, và mỗi món quà là một lời chúc an lành.
