@@ -40,7 +40,7 @@ export function HeroSection() {
                     </div>
 
                     <h1 className="font-darker text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight font-bold">
-                        Primed&apos;Or
+                        Priméd&apos;Or
                     </h1>
                     <p className="font-daytonia text-3xl md:text-5xl font-light tracking-wide text-white/90">
                         Tinh hoa Quà tặng Thiên nhiên

@@ -9,7 +9,7 @@ export function Footer() {
                 {/* Brand Column */}
                 <div className="space-y-6">
                     <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
-                        Primed&apos;Or
+                        Priméd&apos;Or
                     </Link>
                     <p className="text-stone-400 font-light text-sm leading-relaxed max-w-sm">
                         Tinh hoa quà tặng từ thiên nhiên. Chúng tôi tin rằng mỗi mùi hương là một câu chuyện, và mỗi món quà là một lời chúc an lành.
@@ -55,7 +55,7 @@ export function Footer() {
             </div>
 
             <div className="container mx-auto px-6 mt-16 pt-8 border-t border-white/5 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-xs text-stone-500 uppercase tracking-wider">
-                <p>&copy; 2025 Primed&apos;Or. All rights reserved.</p>
+                <p>&copy; 2025 Priméd&apos;Or. All rights reserved.</p>
                 <p>Designed with Passion.</p>
             </div>
         </footer>
