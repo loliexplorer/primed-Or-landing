@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 const forestFont = localFont({
-  src: "../../public/font/forest-regular.ttf",
+  src: "./../../public/font/forest-regular.ttf",
   variable: "--font-forest-local",
   display: "swap",
 });
