@@ -12,8 +12,8 @@ export default function Home() {
       <CollectionsSection />
 
       {/* Placeholder for next sections */}
-      <section className="w-full py-20 text-center">
-        <p className="text-stone-500">Chúc bạn có một trải nghiệm tuyệt vời tại Primed'Or!</p>
+      <section className="w-full py-20 px-6 container mx-auto">
+        <p className="text-stone-500 text-justify">Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!</p>
       </section>
     </main>
   );
