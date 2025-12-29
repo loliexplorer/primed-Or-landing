@@ -36,7 +36,7 @@ const daytoniaFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Priméd'Or | Tinh hoa Quà tặng Thiên nhiên",
+  title: "Priméd'Or | Quà Tặng Từ Thiên Nhiên",
   description: "Trải nghiệm hành trình mùi hương và quà tặng tinh tế từ thiên nhiên.",
 };
 

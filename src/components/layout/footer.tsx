@@ -17,9 +17,6 @@ export function Footer() {
                             priority
                         />
                     </Link>
-                    <p className="text-stone-400 font-light text-sm leading-relaxed max-w-sm">
-                        Tinh hoa quà tặng từ thiên nhiên. Chúng tôi tin rằng mỗi mùi hương là một câu chuyện, và mỗi món quà là một lời chúc an lành.
-                    </p>
                     <div className="flex gap-4 text-stone-400">
                         <a href="https://www.facebook.com/profile.php?id=61577689154811" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
                         <a href="https://www.instagram.com/primedor.vn/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Instagram className="w-5 h-5" /></a>
