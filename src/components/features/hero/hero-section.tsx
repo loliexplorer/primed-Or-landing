@@ -43,7 +43,7 @@ export function HeroSection() {
                         Priméd&apos;Or
                     </h1>
                     <p className="text-3xl md:text-5xl font-light tracking-wide text-white/90 flex flex-col md:flex-row items-center justify-center">
-                        <span className="font-forest">Tinh hoa Quà tặng</span>
+                        <span className="font-forest">TINH HOA QUÀ TẶNG</span>
                         <span className="font-daytonia text-5xl md:text-7xl md:ml-6 mt-2 md:mt-0">Thiên nhiên</span>
                     </p>
                 </motion.div>
