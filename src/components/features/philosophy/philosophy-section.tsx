@@ -26,7 +26,7 @@ export function PhilosophySection() {
                     className="space-y-8 order-2 lg:order-1"
                 >
                     <div className="space-y-4">
-                        <span className="text-[var(--primary-gold)] uppercase tracking-[0.2em] text-sm font-medium">
+                        <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
                             {philosophyContent.subHeading}
                         </span>
                         <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[var(--accent-sage)]">
@@ -46,9 +46,9 @@ export function PhilosophySection() {
                                 <div className="font-serif text-2xl md:text-3xl text-[var(--primary-gold)] mb-1">
                                     {stat.value}
                                 </div>
-                                <div className="text-xs uppercase tracking-wider text-stone-500">
+                                <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
                                     {stat.label}
-                                </div>
+                                </span>
                             </div>
                         ))}
                     </div>
