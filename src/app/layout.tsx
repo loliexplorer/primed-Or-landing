@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -16,6 +17,12 @@ const inter = Inter({
   display: "swap",
 });
 
+const forestFont = localFont({
+  src: "../../public/font/forest-regular.ttf",
+  variable: "--font-forest-local",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Primed'Or | Tinh hoa Quà tặng Thiên nhiên",
   description: "Trải nghiệm hành trình mùi hương và quà tặng tinh tế từ thiên nhiên.",
@@ -29,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${playfair.variable} ${inter.variable} antialiased`}
+        className={`${playfair.variable} ${inter.variable} ${forestFont.variable} antialiased`}
       >
         <Header />
         {children}

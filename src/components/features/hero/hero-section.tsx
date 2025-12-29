@@ -39,7 +39,7 @@ export function HeroSection() {
                         />
                     </div>
 
-                    <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight">
+                    <h1 className="font-forest text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight">
                         Primed&apos;Or
                     </h1>
                     <p className="font-sans text-lg md:text-2xl font-light tracking-[0.2em] text-white/90 uppercase">

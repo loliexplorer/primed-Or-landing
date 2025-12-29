@@ -2,13 +2,17 @@
 
 :root {
   /* Brand Palette - Earthy & Premium */
-  --background: #0E0B0A;      /* Deep Brown/Black */
-  --foreground: #F9F7F5;      /* Off-White */
-  
-  --primary-gold: #C8B278;    /* Muted Gold */
+  --background: #0E0B0A;
+  /* Deep Brown/Black */
+  --foreground: #F9F7F5;
+  /* Off-White */
+
+  --primary-gold: #C8B278;
+  /* Muted Gold */
   --primary-gold-hover: #AA955F;
-  
-  --accent-sage: #4C664C;     /* Deep Green */
+
+  --accent-sage: #4C664C;
+  /* Deep Green */
 }
 
 @theme inline {
@@ -17,9 +21,10 @@
   --color-primary-gold: var(--primary-gold);
   --color-primary-gold-hover: var(--primary-gold-hover);
   --color-accent-sage: var(--accent-sage);
-  
+
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
+  --font-forest: var(--font-forest-local);
 }
 
 body {
