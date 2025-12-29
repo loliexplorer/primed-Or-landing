@@ -28,8 +28,13 @@ export function HeroSection() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col items-center space-y-6"
                 >
-                    {/* Main Logo replacement for text */}
-                    <div className="w-[320px] h-[120px] md:w-[600px] md:h-[220px] relative overflow-hidden transition-transform duration-700 hover:scale-105">
+                    {/* Main Logo centerpiece */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1.5, ease: "easeOut" }}
+                        className="w-[350px] h-[150px] md:w-[850px] md:h-[320px] relative overflow-hidden transition-transform duration-1000 hover:scale-105"
+                    >
                         <Image
                             src="/logo ngang-02.png"
                             alt="Priméd'Or Logo"
@@ -37,11 +42,7 @@ export function HeroSection() {
                             className="object-contain"
                             priority
                         />
-                    </div>
-                    <p className="text-3xl md:text-5xl font-light tracking-wide text-white/90 flex flex-col items-center justify-center gap-2 md:gap-4">
-                        <span className="font-forest">TINH HOA QUÀ TẶNG</span>
-                        <span className="font-daytonia text-5xl md:text-7xl">Thiên nhiên</span>
-                    </p>
+                    </motion.div>
                 </motion.div>
             </section>
         </div>
