@@ -33,7 +33,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="w-[350px] h-[150px] md:w-[850px] md:h-[320px] relative overflow-hidden transition-transform duration-1000 hover:scale-105"
+                        className="w-[400px] h-[180px] md:w-[1000px] md:h-[400px] relative overflow-hidden transition-transform duration-1000 hover:scale-105"
                     >
                         <Image
                             src="/logo ngang-02.png"
