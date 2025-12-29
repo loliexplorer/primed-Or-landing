@@ -8,8 +8,14 @@ export function Footer() {
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
                 {/* Brand Column */}
                 <div className="space-y-6">
-                    <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
-                        Priméd&apos;Or
+                    <Link href="/" className="flex items-center h-12 w-48 relative">
+                        <Image
+                            src="/logo ngang-02.png"
+                            alt="Priméd'Or Logo"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
                     </Link>
                     <p className="text-stone-400 font-light text-sm leading-relaxed max-w-sm">
                         Tinh hoa quà tặng từ thiên nhiên. Chúng tôi tin rằng mỗi mùi hương là một câu chuyện, và mỗi món quà là một lời chúc an lành.
