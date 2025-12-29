@@ -11,15 +11,15 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+const darkerGrotesque = localFont({
+  src: "./../../public/font/DarkerGrotesque-Regular.ttf",
+  variable: "--font-darker-local",
   display: "swap",
 });
 
-const forestFont = localFont({
-  src: "./../../public/font/forest-regular.ttf",
-  variable: "--font-forest-local",
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${playfair.variable} ${inter.variable} ${forestFont.variable} ${daytoniaFont.variable} antialiased`}
+        className={`${playfair.variable} ${inter.variable} ${darkerGrotesque.variable} ${daytoniaFont.variable} antialiased`}
       >
         <Header />
         {children}
