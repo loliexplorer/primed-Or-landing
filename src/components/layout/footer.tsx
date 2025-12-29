@@ -8,14 +8,8 @@ export function Footer() {
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
                 {/* Brand Column */}
                 <div className="space-y-6">
-                    <Link href="/" className="flex items-center h-12 w-48 relative">
-                        <Image
-                            src="/logo ngang-02.png"
-                            alt="Priméd'Or Logo"
-                            fill
-                            className="object-contain object-left"
-                            priority
-                        />
+                    <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
+                        Priméd&apos;Or
                     </Link>
                     <div className="flex gap-4 text-stone-400">
                         <a href="https://www.facebook.com/profile.php?id=61577689154811" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"><Facebook className="w-5 h-5" /></a>
