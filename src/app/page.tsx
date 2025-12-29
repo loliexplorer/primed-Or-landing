@@ -13,7 +13,7 @@ export default function Home() {
 
       {/* lời chúc */}
       <section className="w-full py-20 px-6">
-        <p className="text-stone-500 text-center max-w-2xl mx-auto">
+        <p className="text-stone-500 text-center max-w-md mx-auto leading-relaxed">
           Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!
         </p>
       </section>
