@@ -10,7 +10,7 @@ export function CollectionsSection() {
     return (
         <SectionContainer className="bg-[#F9F7F5] text-[#0E0B0A]" id="collections">
             <div className="flex flex-col items-center text-center mb-16">
-                <span className="text-[var(--primary-gold)] uppercase tracking-[0.2em] text-sm font-medium">
+                <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
                     Discover
                 </span>
                 <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mt-4 text-[var(--accent-sage)]">
