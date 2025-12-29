@@ -26,7 +26,7 @@ export function HeroSection() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.2, ease: "easeOut" }}
-                    className="flex flex-col items-center space-y-2 md:space-y-4"
+                    className="flex flex-col items-center space-y-0"
                 >
                     {/* Main Logo centerpiece */}
                     <motion.div
@@ -48,7 +48,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.8, duration: 1.2 }}
-                        className="text-white/90 flex flex-col items-center justify-center gap-2 md:gap-3"
+                        className="text-white/90 flex flex-col items-center justify-center gap-2 md:gap-3 -mt-8 md:-mt-16"
                     >
                         <span className="font-forest text-xl md:text-2xl tracking-[0.2em]">TINH HOA QUÀ TẶNG</span>
                         <span className="font-daytonia text-4xl md:text-6xl">Thiên nhiên</span>
