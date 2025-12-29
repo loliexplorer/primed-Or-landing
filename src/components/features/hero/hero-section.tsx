@@ -28,20 +28,16 @@ export function HeroSection() {
                     transition={{ duration: 1.2, ease: "easeOut" }}
                     className="flex flex-col items-center space-y-6"
                 >
-                    {/* Logo above big text */}
-                    <div className="w-24 h-24 mb-2 relative overflow-hidden transition-transform duration-700 hover:scale-110">
+                    {/* Main Logo replacement for text */}
+                    <div className="w-[320px] h-[120px] md:w-[600px] md:h-[220px] relative overflow-hidden transition-transform duration-700 hover:scale-105">
                         <Image
-                            src="/logo.png"
+                            src="/logo ngang-02.png"
                             alt="Priméd'Or Logo"
                             fill
                             className="object-contain"
                             priority
                         />
                     </div>
-
-                    <h1 className="font-darker text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight font-bold">
-                        Priméd&apos;Or
-                    </h1>
                     <p className="text-3xl md:text-5xl font-light tracking-wide text-white/90 flex flex-col items-center justify-center gap-2 md:gap-4">
                         <span className="font-forest">TINH HOA QUÀ TẶNG</span>
                         <span className="font-daytonia text-5xl md:text-7xl">Thiên nhiên</span>
