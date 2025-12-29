@@ -42,7 +42,7 @@ export function HeroSection() {
                     <h1 className="font-forest text-6xl md:text-8xl lg:text-9xl text-[var(--primary-gold)] tracking-tight">
                         Primed&apos;Or
                     </h1>
-                    <p className="font-sans text-lg md:text-2xl font-light tracking-[0.2em] text-white/90 uppercase">
+                    <p className="font-daytonia text-3xl md:text-5xl font-light tracking-wide text-white/90">
                         Tinh hoa Quà tặng Thiên nhiên
                     </p>
                 </motion.div>

@@ -25,6 +25,7 @@
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
   --font-forest: var(--font-forest-local);
+  --font-daytonia: var(--font-daytonia-local);
 }
 
 body {

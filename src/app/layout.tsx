@@ -23,6 +23,12 @@ const forestFont = localFont({
   display: "swap",
 });
 
+const daytoniaFont = localFont({
+  src: "./../../public/font/MTD Daytonia.otf",
+  variable: "--font-daytonia-local",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "Primed'Or | Tinh hoa Quà tặng Thiên nhiên",
   description: "Trải nghiệm hành trình mùi hương và quà tặng tinh tế từ thiên nhiên.",
@@ -36,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${playfair.variable} ${inter.variable} ${forestFont.variable} antialiased`}
+        className={`${playfair.variable} ${inter.variable} ${forestFont.variable} ${daytoniaFont.variable} antialiased`}
       >
         <Header />
         {children}
