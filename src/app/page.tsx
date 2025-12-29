@@ -11,9 +11,9 @@ export default function Home() {
       <IngredientsSection />
       <CollectionsSection />
 
-      {/* Placeholder for next sections */}
-      <section className="w-full py-20 px-6 container mx-auto">
-        <p className="text-stone-500 text-justify">Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!</p>
+      {/* lời chúc */}
+      <section className="w-full py-20 px-6 container mx-auto text-center">
+        <p className="text-stone-500">Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!</p>
       </section>
     </main>
   );
