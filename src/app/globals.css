@@ -22,8 +22,9 @@
   --color-primary-gold-hover: var(--primary-gold-hover);
   --color-accent-sage: var(--accent-sage);
 
-  --font-serif: var(--font-playfair);
-  --font-sans: var(--font-inter);
+  --font-serif: var(--font-forest-local);
+  --font-sans: var(--font-darker-local);
+  --font-forest: var(--font-forest-local);
   --font-darker: var(--font-darker-local);
   --font-daytonia: var(--font-daytonia-local);
 }
@@ -31,5 +32,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-darker);
 }

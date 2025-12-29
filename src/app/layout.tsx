@@ -17,6 +17,12 @@ const darkerGrotesque = localFont({
   display: "swap",
 });
 
+const forestFont = localFont({
+  src: "./../../public/font/forest-regular.ttf",
+  variable: "--font-forest-local",
+  display: "swap",
+});
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body
-        className={`${playfair.variable} ${inter.variable} ${darkerGrotesque.variable} ${daytoniaFont.variable} antialiased`}
+        className={`${playfair.variable} ${inter.variable} ${darkerGrotesque.variable} ${forestFont.variable} ${daytoniaFont.variable} antialiased`}
       >
         <Header />
         {children}
