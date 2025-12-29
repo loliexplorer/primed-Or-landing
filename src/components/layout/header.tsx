@@ -37,7 +37,7 @@ export function Header() {
             >
                 <div className="container mx-auto px-6 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="font-serif text-2xl font-bold text-white tracking-tight z-50 relative">
+                    <Link href="/" className="font-forest text-2xl font-bold text-white tracking-tight z-50 relative">
                         Primed&apos;Or
                     </Link>
 
