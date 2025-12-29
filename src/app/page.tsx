@@ -12,8 +12,8 @@ export default function Home() {
       <CollectionsSection />
 
       {/* lời chúc */}
-      <section className="w-full py-20 px-6 container mx-auto text-center">
-        <p className="text-stone-500">Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!</p>
+      <section className="w-full py-20">
+        <p className="text-stone-500 text-center w-full">Chúc bạn có một trải nghiệm tuyệt vời tại Priméd&apos;Or!</p>
       </section>
     </main>
   );
