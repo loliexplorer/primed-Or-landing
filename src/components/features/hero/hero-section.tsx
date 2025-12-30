@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function HeroSection() {
     return (
-        <div className="relative h-screen w-full overflow-hidden bg-[#FBF4DA] text-[#F9F7F5]">
+        <div className="relative h-screen w-full overflow-hidden bg-[#EEC462] text-[#F9F7F5]">
             {/* Video Background */}
             <div className="absolute inset-0 z-0 select-none">
                 <video

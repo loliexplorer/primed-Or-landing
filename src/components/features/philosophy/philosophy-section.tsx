@@ -59,7 +59,7 @@ export function PhilosophySection() {
                     <motion.div style={{ y }} className="absolute inset-0">
                         {/* 
                   Using a placeholder div for now. 
-                  In production, this would be <Image /> with object-cover.
+                  In production, this would be <Image /> with object-cover.x
                 */}
                         <div className="h-full w-full bg-[#E5E0D8] relative overflow-hidden rounded-sm">
                             {/* Abstract Shape or Image Placeholder */}
