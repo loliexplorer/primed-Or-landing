@@ -8,7 +8,7 @@ export function Footer() {
             <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
                 {/* Brand Column */}
                 <div className="space-y-6">
-                    <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-[var(--primary-gold)]">
+                    <Link href="/" className="font-serif text-3xl font-bold tracking-tight text-white">
                         Priméd&apos;Or
                     </Link>
                     <div className="flex gap-4 text-stone-400">
