@@ -37,7 +37,7 @@ export function Header() {
             >
                 <div className="container mx-auto px-6 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="font-darker text-3xl font-bold text-white tracking-tight z-50 relative">
+                    <Link href="/" className="font-darker text-3xl font-bold text-brand-brown tracking-tight z-50 relative">
                         Priméd&apos;Or
                     </Link>
 
@@ -51,7 +51,7 @@ export function Header() {
                                     href={link.href}
                                     target={isExternal ? "_blank" : undefined}
                                     rel={isExternal ? "noopener noreferrer" : undefined}
-                                    className="text-sm uppercase tracking-widest text-white/80 hover:text-[var(--primary-gold)] transition-colors"
+                                    className="text-sm uppercase tracking-widest text-brand-brown/80 hover:text-primary-gold transition-colors"
                                 >
                                     {link.name}
                                 </a>
@@ -61,7 +61,7 @@ export function Header() {
                             href="https://primedor.com/collections/all"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-white hover:text-[var(--primary-gold)] transition-colors"
+                            className="text-brand-brown hover:text-primary-gold transition-colors"
                         >
                             <ShoppingBag className="w-5 h-5" />
                         </a>

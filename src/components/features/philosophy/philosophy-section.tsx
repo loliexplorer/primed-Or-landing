@@ -15,7 +15,7 @@ export function PhilosophySection() {
     const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
     return (
-        <SectionContainer className="bg-[#F9F7F5] text-[#0E0B0A] overflow-hidden" id="philosophy">
+        <SectionContainer className="bg-background text-brand-brown overflow-hidden" id="philosophy">
             <div ref={containerRef} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 {/* Text Content */}
                 <motion.div
@@ -26,27 +26,27 @@ export function PhilosophySection() {
                     className="space-y-8 order-2 lg:order-1"
                 >
                     <div className="space-y-4">
-                        <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
+                        <span className="font-daytonia text-primary-gold text-2xl">
                             {philosophyContent.subHeading}
                         </span>
-                        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[var(--accent-sage)]">
+                        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-brand-brown">
                             {philosophyContent.heading}
                         </h2>
                     </div>
 
-                    <div className="space-y-6 text-lg font-light leading-relaxed text-stone-700">
+                    <div className="space-y-6 text-lg font-light leading-relaxed text-brand-brown/90">
                         {philosophyContent.body.map((paragraph, idx) => (
                             <p key={idx}>{paragraph}</p>
                         ))}
                     </div>
 
-                    <div className="grid grid-cols-3 gap-8 pt-8 border-t border-[var(--primary-gold)]/30">
+                    <div className="grid grid-cols-3 gap-8 pt-8 border-t border-primary-gold/30">
                         {philosophyContent.stats.map((stat, idx) => (
                             <div key={idx} className="text-center lg:text-left">
-                                <div className="font-serif text-2xl md:text-3xl text-[var(--primary-gold)] mb-1">
+                                <div className="font-serif text-2xl md:text-3xl text-primary-gold mb-1">
                                     {stat.value}
                                 </div>
-                                <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
+                                <span className="font-daytonia text-primary-gold text-2xl">
                                     {stat.label}
                                 </span>
                             </div>
@@ -69,7 +69,7 @@ export function PhilosophySection() {
                             />
 
                             {/* Decorative border */}
-                            <div className="absolute inset-4 border border-[var(--primary-gold)]/30 z-10" />
+                            <div className="absolute inset-4 border border-primary-gold/30 z-10" />
                         </div>
                     </motion.div>
                 </div>

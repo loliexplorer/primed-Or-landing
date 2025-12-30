@@ -8,12 +8,12 @@ import { ArrowRight } from 'lucide-react';
 
 export function CollectionsSection() {
     return (
-        <SectionContainer className="bg-[#F9F7F5] text-[#0E0B0A]" id="collections">
+        <SectionContainer className="bg-background text-brand-brown" id="collections">
             <div className="flex flex-col items-center text-center mb-16">
-                <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
+                <span className="font-daytonia text-primary-gold text-2xl">
                     Discover
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mt-4 text-[var(--accent-sage)]">
+                <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mt-4 text-brand-brown">
                     Bộ Sưu Tập
                 </h2>
             </div>
@@ -44,21 +44,21 @@ export function CollectionsSection() {
 
                                 {/* Overlay Button */}
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                    <button className="bg-white/90 backdrop-blur-sm text-[var(--accent-sage)] px-8 py-3 uppercase tracking-widest text-xs font-medium hover:bg-[#F9F7F5] transition-colors flex items-center gap-2">
+                                    <div className="bg-brand-brown/90 backdrop-blur-sm text-background px-8 py-3 uppercase tracking-widest text-xs font-medium hover:bg-brand-brown transition-colors flex items-center gap-2">
                                         Khám phá <ArrowRight className="w-4 h-4" />
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
 
                             {/* Text Content */}
                             <div className="text-center space-y-2">
-                                <h3 className="font-serif text-2xl md:text-3xl text-[var(--accent-sage)] group-hover:text-[var(--primary-gold)] transition-colors duration-300">
+                                <h3 className="font-serif text-2xl md:text-3xl text-brand-brown group-hover:text-primary-gold transition-colors duration-300">
                                     {collection.title}
                                 </h3>
-                                <p className="text-[var(--primary-gold)] text-sm uppercase tracking-wider font-medium">
+                                <p className="text-primary-gold text-sm uppercase tracking-wider font-medium">
                                     {collection.vietnameseTitle}
                                 </p>
-                                <p className="text-stone-500 font-light text-sm max-w-xs mx-auto line-clamp-2 group-hover:text-stone-800 transition-colors">
+                                <p className="text-brand-brown/70 font-light text-sm max-w-xs mx-auto line-clamp-2 group-hover:text-brand-brown transition-colors">
                                     {collection.description}
                                 </p>
                             </div>
