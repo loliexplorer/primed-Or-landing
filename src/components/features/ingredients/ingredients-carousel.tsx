@@ -19,7 +19,7 @@ export function IngredientsSection() {
     }, []);
 
     return (
-        <SectionContainer className="bg-[#0E0B0A] text-[#F9F7F5] overflow-hidden py-24" id="ingredients">
+        <SectionContainer className="bg-[#E9D4B9] text-[#F9F7F5] overflow-hidden py-24" id="ingredients">
             <div className="mb-12 px-4 md:px-0 lg:max-w-4xl">
                 <span className="font-daytonia text-[var(--primary-gold)] text-2xl">
                     From Earth to Soul
