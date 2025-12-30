@@ -36,7 +36,7 @@ export function HeroSection() {
                         className="w-[400px] h-[180px] md:w-[1000px] md:h-[400px] relative overflow-hidden transition-transform duration-1000 hover:scale-105"
                     >
                         <Image
-                            src="/8.png"
+                            src="/logo2.png"
                             alt="Priméd'Or Logo"
                             fill
                             className="object-contain"
